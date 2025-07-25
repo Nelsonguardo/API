@@ -50,7 +50,7 @@ PythonProject/
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com/usuario/tu-proyecto.git
+   git clone https://github.com/Nelsonguardo/API.git
    cd tu-proyecto
    ```
 
