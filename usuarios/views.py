@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views import View
 from .models import CustomUser
 from django.contrib.auth import aauthenticate, login, authenticate, get_user_model
+from drf_spectacular.utils import extend_schema_view, extend_schema
 
 
 User = get_user_model()
@@ -25,7 +26,7 @@ class UserRegister(View):
             last_name = last_name,
             email = email
         )
-        return render(request,'register.html',{'user':user})
+        return render(request, 'register.html', {'new_user': user})
 
 
 class UserLogin(View):
@@ -47,7 +48,7 @@ class UserLogin(View):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return render(request, 'perfil.html', {'user': user})
+            return render(request, 'profile.html', {'user': user})
         else:
             # Usuario existe pero contraseña incorrecta
             return render(request, 'login.html', {'error': 'Contraseña incorrecta.'})

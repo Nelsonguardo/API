@@ -1,0 +1,58 @@
+# Entorno virtual
+venv/
+.env
+
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Archivos de base de datos local (opcional)
+db.sqlite3
+
+# Archivos estáticos generados
+/staticfiles/
+/media/
+
+# Archivos temporales
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*~
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de cobertura de tests
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Archivos de entorno de Python adicionales
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Archivos de configuración locales
+*.env.local
+*.local
+
+# Archivos de logs de Django
+*.log
+
+# Node_modules si llegas a tener front integrado
+node_modules/
